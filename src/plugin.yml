@@ -1,0 +1,6 @@
+name: DeityBooks
+version: 13.2.9
+main: com.imdeity.deitybooks.DeityBooks
+author: cliff777
+depend: [DeityAPI]
+
