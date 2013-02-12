@@ -39,7 +39,6 @@ public class DeityBooksDatabase {
 			meta.setTitle(title);
 			meta.setAuthor(author);
 			meta.setPages(pages);
-			System.out.println("returned meta");
 			return meta;
 		}
 		return null;

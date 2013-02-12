@@ -99,14 +99,13 @@ public class BookListener extends DeityListener {
 			DeityAPI.getAPI().getDataAPI().getMySQL().write(sql, bookid, p.getName(), b.getX(), b.getY(), b.getZ(), title, author, page);
 		}
 		
-		DeityBooks.plugin.chat.sendPlayerMessage(p, "&aYou put &b" + title + " &a by &b" + author + " &a in the bookcase");
+		DeityBooks.plugin.chat.sendPlayerMessage(p, "&aYou put &b" + title + " &aby &b" + author + "&a in the bookcase");
 
 	}
 
 
 	//Make a copy of the book in the bookcase and 'give' it to the player
 	public void copyBook(Player p, Block b) {
-		System.out.println("copy");
 		BookMeta meta = DeityBooksDatabase.getBookMeta(b);
 		if(meta != null) {
 			p.getItemInHand().setType(Material.WRITTEN_BOOK);
